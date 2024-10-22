@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <!--Kodu, HTML belgesinin dilini belirtir. Bu örnekte "en" İngilizceyi ifade eder. Bu bilgi, arama motorları, ekran okuyucular ve diğer tarayıcı araçları için önemlidir.-->
+<head>
+    <meta charset="UTF-8"><!--Kodu web sayfasının karakter kodlamasını belirtir.UTF-8, dünya genelindeki birçok dilin karakterlerini destekleyen bir kodlamadır.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Web sayfasının mobil cihazlarda(her cihazda) nasıl görünceğini kontrol eder.-->
+    <title>Örnek HTML Sayfası</title>
+</head>
+<body>
+
+    <!-- Başlık -->
+    <h1>Merhaba, GoIT!</h1><!--Bu "h" tagının 6 ya kadar yolu vardır 6 ya doğru gidildikce yazının fontuz azalır.-->
+
+    <!-- Paragraf -->
+    <p>Örnek paragraf.</p><!--Paragraf yeri açar.-->
+
+    <!-- Link (Bağlantı) -->
+    <a href="https://goit.global/tr/" target="_blank">GoIT için tıklayınız. </a><!-- a: link vermek için kullanılır href=hedefini belirlemek için kullanılır.-->
+                                                            <!--target : Bir bağlantının (linkin) tıklandığında hangi pencerede veya sekmede açılacağını belirler.-->
+                     <br><br>                                       <!-- blank : Bağlantıya tıklandığında yeni bir sekmede veya pencerede açılır.Bunun daha 4 tane tagı vardır hepsi farklı işlemler görüyor.En çok bu kullanıldığı için bunu kullandım.-->
+
+                                                           
+    <!-- Görsel -->
+    <img src="/img/8a3e45124050039.Y3JvcCw4MDgsNjMyLDAsMA.png" alt="Örnek Görsel" width="300"><!--img :resim koymak için kullanırlır src(sourc)nereye gitmek istediğini anlatırsın alt ise resim olmazsa yerıne ne yazsın.-->
+                                                                                <!--Burada girmiş olduğum width(genişlik) resmin genişliğini ayarlar bunun heightsınıde(yüksekliğinide) ayarlayabılırsıniz ama width'yi tek kendisi girdiğinde heightsınıde kendısı ayarlar bazı durumlarda ayarlamaz ama normalde ayarlar.-->
+    <!-- Liste -->
+    <h2>Numaralı Sıralı Liste</h2>
+    <ol><!--Orderet list: Sıralı yani numaralarla liste yapar.-->
+        <li>Birinci madde</li>
+        <li>İkinci madde</li>
+        <li>Üçüncü madde</li>
+    </ol>
+
+    <h2>Numarasız Sırasız Liste</h2>
+    <ul><!--Unordered list:Sırasız liste yapma.-->
+        <li>Madde</li>
+        <li>Madde</li>
+        <li>Madde</li>
+    </ul>
+    
+        <p>Şehir Seçiniz:</p> <!--inpuutu aşağıda açıkladım.-->
+        <input type="radio">Bartın  <!--radio işaretleme yerlerini daire yapar.-->
+        <input type="radio">Zonguldak
+        <input type="radio">Trabzon
+        <br>
+
+        <p>Kişi Seçiniz:</p>
+       <input type="checkbox">Ben <br> <!--checkbox işaretleme yerlerini kutucuk yapar.-->
+       <input type="checkbox">Sen <br>
+       <input type="checkbox">O
+       <br><br><br>
+       <hr>
+
+    <!-- Form Örneği -->
+    <form action="submit" method="post"><!--form: HTML'de kullanıcıdan veri almak için kullanılan bir yapıdır ve web formlarını tanımlar. Formlar, kullanıcının girdiği bilgileri bir sunucuya göndermek için kullanılır.-->
+                                        <!--action="sumbit": Formun gönderileceği URL yi belirler. Kullanıcı formu doldurup "Gönder" butonuna bastığında, tarayıcı formdaki verileri burada tanımlanan URL'ye gönderir.    
+                                                    sumbit: Bunu bır ornek mahıyetıne gırdım burada aslında bır url olması lazım yanı göndderceğiniz formların gideceği yerin urlesi.-->
+        
+                                        <!--method(yöntem): HTML form etiketinde kullanılır ve form verilerinin sunucuya nasıl gönderileceğini belirler. Bu özellik, verilerin iletim biçimini tanımlar. İki ana HTTP yöntemi vardır: "get" ve "post"
+                                        get: Form verileri URL'ye eklenerek gönderilir.Yani urlye baktığınız zaman forma gırdığiniz yazılar urldede yazar. post: get ' in tam tersidir.'-->
+        
+        <label for="name">Adınız:</label><!-- label(etiket): bir form elemanına (örneğin, <input>, <select>, <textarea>) anlamlı bir isim veya açıklama ekler. Kısacası kullanıcının hangi alanın ne anlama geldiğini anlamasına yardımcı olur. -->
+                                        <!--for Özelliği: <label> etiketinin en yaygın kullanımı, for özelliği ile belirli bir form elemanına referans vermektir. for değeri, etiketin hangi form elemanına ait olduğunu belirtir. Form elemanının id değeri ile eşleşmelidir.-->
+        
+            <input type="text" id="name" name="burdaki inputun adıdır. Yani kendin ad verıyorsun." placeholder="Adınızı giriniz" required><!--input(giriş, girdi, veri girişi): HTML'de kullanıcıdan veri almak için kullanılan bir form elemanıdır.  Metin, şifre, e-posta, tarih, dosya yükleme gibi çeşitli veri türlerini almak için kullanılır.-->                                                                                      
+        <br><br>                                                                            <!--type(tip): Giriş türünü belirler (örneğin, text, password, email, checkbox, radio, file).-->
+                                                                                            <!--id : HTML'de bir elemente benzersiz bir tanımlayıcı vermek için kullanılır. Bu tanımlayıcı, sayfa içinde yalnızca bir kez kullanılmalıdır ve belirli bir elemente referans vermek için kullanılır.-->
+                                                                                            <!--placeholder(yer tutucu): bi tane metin ya da kullanıcı adı şablonu vb. açtığınızda verdiğiniz kodu orada gölgeli bi şekilde yazar.-->
+        <label for="email">E-posta:</label>                                                 <!--required(gerekli): HTML formlarında belirli alanların doldurulmasının zorunlu olduğunu belirtir.-->
+        <input type="email" id="email" name="email" placeholder="ornek@mail.com" required>  <!--value:Form alanının varsayılan değerini belirler. Form gönderildiğinde bu değer, sunucuya gönderilir.Aslında yazılan şeyi kutucuk yapar.-->
+                                                                                            <!--Buraya girilen kodlar toplam 10 tane bunları yaptık kaldı 7 hepsini zamanla öğrenicez inşallah:))...-->
+        <br><br>
+
+        <input type="submit" value="Gönder">
+    </form>
+
+</body>
+</html>
